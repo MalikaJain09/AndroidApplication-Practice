@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ConfirmStudentDetailsActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration Successful"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewEntered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details Entered"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="#745AAC"
+            android:textSize="24dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#745AAC"
+            android:textSize="24dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewFathersName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#745AAC"
+            android:textSize="24dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewMothersName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#745AAC"
+            android:textSize="24dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#745AAC"
+            android:textSize="24dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#745AAC"
+            android:textSize="24dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#745AAC"
+            android:textSize="24dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#745AAC"
+            android:textSize="24dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#745AAC"
+            android:textSize="24dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewRollNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#745AAC"
+            android:textSize="24dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#745AAC"
+            android:textSize="24dp"
+            android:gravity="center"/>
+     </LinearLayout>
+
+</ScrollView>

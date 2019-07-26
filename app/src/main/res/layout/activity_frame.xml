@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/colorAccent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/textView5"
+        android:layout_width="344dp"
+        android:layout_height="67dp"
+        android:hint="Name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="45dp" />
+
+</FrameLayout>
