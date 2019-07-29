@@ -9,7 +9,9 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Message;
 
+import com.auribises.app4.viewcontroller.AddCustomerActivity;
 import com.auribises.app4.viewcontroller.BooksActivity;
+import com.auribises.app4.viewcontroller.TechCrunchNewsActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -24,7 +26,7 @@ public class SplashActivity extends AppCompatActivity {
         @Override
         public void handleMessage(@NonNull Message msg) {
             if(msg.what==111){
-                Intent intent = new Intent(SplashActivity.this, BooksActivity.class);
+                Intent intent = new Intent(SplashActivity.this, LudhianaMapsActivity.class);
                 startActivity(intent);
                 finish();
             }

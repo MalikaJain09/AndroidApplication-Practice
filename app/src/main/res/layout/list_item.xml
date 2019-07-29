@@ -8,10 +8,10 @@
     >
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:srcCompat="@color/colorYellow" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -22,15 +22,19 @@
     >
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/textViewName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Customer Phone"
+            android:textSize="24dp"
+            android:textColor="@color/colorPrimaryDark"/>
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/textViewPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Customer Phone"
+            android:textSize="18dp"
+            android:textColor="@color/colorAccent"/>
     </LinearLayout>
 </LinearLayout>

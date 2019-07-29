@@ -3,6 +3,7 @@ package com.auribises.app4.viewcontroller;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -31,6 +32,7 @@ public class TechCrunchNewsActivity extends AppCompatActivity implements Adapter
     StringBuilder builder;
     ArrayList<TechCrunchNews> newsList;
     NewsAdapter adapter;
+    FetchNewsTask task;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,11 +45,17 @@ public class TechCrunchNewsActivity extends AppCompatActivity implements Adapter
         progressDialog.setCancelable(false);
         progressDialog.setMessage("Please Wait");
 
+        task = new FetchNewsTask();
+        task.execute();
+
     }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+              TechCrunchNews news = newsList.get(i);
+        Intent intent = new Intent(TechCrunchNewsActivity.this,DetailedNewsActivity.class);
+        intent.putExtra("keyUrl",news.url);
+        startActivity(intent);
     }
 
     class FetchNewsTask extends AsyncTask{
@@ -80,7 +88,8 @@ public class TechCrunchNewsActivity extends AppCompatActivity implements Adapter
         }
 
         @Override
-        protected void onPreExecute() {
+        protected void onPreExecute()
+        {
             progressDialog.show();
         }
     }
