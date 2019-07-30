@@ -28,6 +28,7 @@ public class CustomListActivity extends AppCompatActivity implements AdapterView
 
     void initViews(){
         listView = findViewById(R.id.listView);
+        //dffghhuh
 //        recyclerView = findViewById(R.id.recyclerView);
 
         Customer c1 = new Customer(R.drawable.person, "John", "+91 99999 88888");
