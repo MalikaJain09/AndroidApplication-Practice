@@ -11,7 +11,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.auribises.app4.MyNewsService;
 import com.auribises.app4.R;
+import com.auribises.app4.SplashActivity;
 import com.auribises.app4.adapter.NewsAdapter;
 import com.auribises.app4.model.TechCrunchNews;
 
@@ -45,9 +47,12 @@ public class TechCrunchNewsActivity extends AppCompatActivity implements Adapter
         progressDialog.setCancelable(false);
         progressDialog.setMessage("Please Wait");
 
-        task = new FetchNewsTask();
-        task.execute();
-
+//        task = new FetchNewsTask();
+//        task.execute();
+        Intent intent = new Intent(TechCrunchNewsActivity.this, MyNewsService.class);
+        intent.putExtra("keyUrl","https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=f2cf54a734ee4c6381abc5b57e49b288");
+        startService(intent);
+        //Execute the service
     }
 
     @Override

@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Message;
 
+import com.auribises.app4.model.TechCrunchNews;
 import com.auribises.app4.viewcontroller.AddCustomerActivity;
 import com.auribises.app4.viewcontroller.BooksActivity;
 import com.auribises.app4.viewcontroller.TechCrunchNewsActivity;
@@ -21,12 +22,13 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         getSupportActionBar().hide();
         handler.sendEmptyMessageDelayed(111,2500);
+
     }
     Handler handler = new Handler(){
         @Override
         public void handleMessage(@NonNull Message msg) {
             if(msg.what==111){
-                Intent intent = new Intent(SplashActivity.this, LudhianaMapsActivity.class);
+                Intent intent = new Intent(SplashActivity.this, CustomListActivity.class);
                 startActivity(intent);
                 finish();
             }
